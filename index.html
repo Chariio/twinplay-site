@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TwinPlay — Dual-Screen Emulator for iPhone and iPad</title>
+  <meta name="description" content="TwinPlay turns your iPhone into a dual-screen handheld. Play your own 3DS, DS, N64, Game Boy Advance, and more. Custom skins, a full layout editor, and no games included.">
+  <meta name="theme-color" content="#08060f">
+  <meta name="author" content="Charlie Rodriguez Garcia">
+  <meta name="apple-itunes-app" content="app-id=6824603080">
+  <link rel="canonical" href="https://chariio.github.io/twinplay-site/">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="stylesheet" href="css/styles.css">
+  <meta property="og:url" content="https://chariio.github.io/twinplay-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TwinPlay — Dual-Screen Emulator">
+  <meta property="og:description" content="Play your own 3DS, DS, N64, Game Boy Advance, and more on iPhone and iPad. No games included.">
+  <meta property="og:image" content="https://chariio.github.io/twinplay-site/assets/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TwinPlay — Dual-Screen Emulator">
+  <meta name="twitter:description" content="Play your own 3DS, DS, N64, Game Boy Advance, and more on iPhone and iPad. No games included.">
+  <meta name="twitter:image" content="https://chariio.github.io/twinplay-site/assets/og.jpg">
+  <link rel="preload" href="assets/fonts/outfit.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/icon-rounded-256.png" as="image">
+</head>
+<body>
+  <a class="skip" href="#main" data-i18n="skip">Skip to content</a>
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="./">
+        <img src="assets/icon-rounded-256.png" width="36" height="36" alt="">
+        <span class="brand-name">TwinPlay</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#features" data-i18n="nav_features">Features</a>
+        <a href="#systems" data-i18n="nav_systems">Systems</a>
+        <a href="#skins" data-i18n="nav_skins">Skins</a>
+        <a href="#specs" data-i18n="nav_specs">Specs</a>
+        <a href="#faq" data-i18n="nav_faq">FAQ</a>
+      </nav>
+      <div class="nav-end">
+        <div class="lang" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true">EN</button>
+          <button type="button" data-lang="es" aria-pressed="false">ES</button>
+        </div>
+        <a class="badge-link" href="https://apps.apple.com/us/app/twinplay-dual-screen-emulator/id6824603080">
+          <img src="assets/badge-app-store.svg" width="120" height="40" alt="Download on the App Store">
+        </a>
+        <button class="menu-btn" type="button" aria-expanded="false" aria-label="Menu">
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="hero_eyebrow">Available now on the App Store</p>
+          <h1 data-i18n="hero_title">Your iPhone becomes a dual-screen handheld.</h1>
+          <p class="lede" data-i18n="hero_lede">Play your own 3DS, DS, N64, Game Boy, and more — with custom skins, a full layout editor, and no games included.</p>
+          <div class="hero-actions">
+            <a class="badge-link" href="https://apps.apple.com/us/app/twinplay-dual-screen-emulator/id6824603080">
+              <img src="assets/badge-app-store.svg" width="150" height="50" alt="Download on the App Store">
+            </a>
+            <p class="fine" data-i18n="hero_fine">Free on iPhone and iPad · iOS 16 or later · No games included</p>
+          </div>
+        </div>
+        <figure class="hero-video">
+          <video class="js-autoplay" autoplay muted loop playsinline preload="auto" width="960" height="598" poster="assets/media/zelda-oot3d-poster.jpg" aria-label="Gameplay of The Legend of Zelda: Ocarina of Time 3D in TwinPlay.">
+            <source src="assets/media/zelda-oot3d.webm" type="video/webm">
+            <source src="assets/media/zelda-oot3d.mp4" type="video/mp4">
+          </video>
+          <img class="js-poster-only" src="assets/media/zelda-oot3d-poster.jpg" width="960" height="598" alt="The Legend of Zelda: Ocarina of Time 3D running in TwinPlay.">
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="action">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="action_h">See it in action</h2>
+          <p class="sub" data-i18n="action_p">Real gameplay recorded in TwinPlay on a 3DS layout. You bring your own games — none are included in the app.</p>
+        </div>
+        <div class="play-grid">
+          <figure class="play-card">
+            <video class="js-autoplay" autoplay muted loop playsinline preload="none" width="960" height="598" poster="assets/media/zelda-oot3d-poster.jpg" data-lazy-src="1" aria-label="Ocarina of Time 3D in TwinPlay.">
+              <source data-src="assets/media/zelda-oot3d.webm" type="video/webm">
+              <source data-src="assets/media/zelda-oot3d.mp4" type="video/mp4">
+            </video>
+            <img class="js-poster-only" src="assets/media/zelda-oot3d-poster.jpg" width="960" height="598" alt="Ocarina of Time 3D in TwinPlay.">
+            <figcaption><span data-i18n="action_zelda">Ocarina of Time 3D</span><span class="sys" data-i18n="action_sys">Nintendo 3DS</span></figcaption>
+          </figure>
+          <figure class="play-card">
+            <video class="js-autoplay" autoplay muted loop playsinline preload="none" width="960" height="598" poster="assets/media/mario-3d-land-poster.jpg" data-lazy-src="1" aria-label="Super Mario 3D Land in TwinPlay.">
+              <source data-src="assets/media/mario-3d-land.webm" type="video/webm">
+              <source data-src="assets/media/mario-3d-land.mp4" type="video/mp4">
+            </video>
+            <img class="js-poster-only" src="assets/media/mario-3d-land-poster.jpg" width="960" height="598" alt="Super Mario 3D Land in TwinPlay.">
+            <figcaption><span data-i18n="action_mario">Super Mario 3D Land</span><span class="sys" data-i18n="action_sys">Nintendo 3DS</span></figcaption>
+          </figure>
+          <figure class="play-card">
+            <video class="js-autoplay" autoplay muted loop playsinline preload="none" width="960" height="598" poster="assets/media/pokemon-x-poster.jpg" data-lazy-src="1" aria-label="Pokémon X in TwinPlay.">
+              <source data-src="assets/media/pokemon-x.webm" type="video/webm">
+              <source data-src="assets/media/pokemon-x.mp4" type="video/mp4">
+            </video>
+            <img class="js-poster-only" src="assets/media/pokemon-x-poster.jpg" width="960" height="598" alt="Pokémon X in TwinPlay.">
+            <figcaption><span data-i18n="action_pokemon">Pokémon X</span><span class="sys" data-i18n="action_sys">Nintendo 3DS</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <div class="rail-wrap">
+      <div class="rail">
+        <figure>
+          <img src="assets/screenshots/iphone-01-systems.webp" width="800" height="1738" alt="">
+          <figcaption data-i18n="cap_systems">Systems</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/iphone-02-editor.webp" width="800" height="1738" alt="The TwinPlay layout editor, with snap guides for moving screens and buttons.">
+          <figcaption data-i18n="cap_editor">Layout editor</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/iphone-03-skins.webp" width="800" height="1738" alt="">
+          <figcaption data-i18n="cap_skins">Jelly skins</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/iphone-04-devices.webp" width="800" height="1738" alt="TwinPlay on iPhone, iPad and a foldable iPhone.">
+          <figcaption data-i18n="cap_devices">iPhone, iPad, foldable</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/iphone-05-saves.webp" width="800" height="1738" alt="Save states in TwinPlay, including an automatic slot and quick saves.">
+          <figcaption data-i18n="cap_saves">Save states</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/screenshots/iphone-06-controller.webp" width="800" height="1738" alt="">
+          <figcaption data-i18n="cap_controller">Controllers</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <section class="section" id="features">
+      <div class="wrap">
+        <article class="feature">
+          <div>
+            <h2 data-i18n="feat_dual_h">Made for two screens</h2>
+            <p data-i18n="feat_dual_p">The game sits on the top screen and the touch screen on the bottom, in portrait or landscape. Tap and drag on the bottom screen like a stylus. On a foldable iPhone, unfold it and the two screens split right at the fold.</p>
+          </div>
+          <div class="feature-media fit-contain">
+            <img src="assets/media/zelda-oot3d-dual.webp" width="960" height="1362" alt="Both 3DS screens in TwinPlay: Ocarina of Time 3D on top, and the touch screen below.">
+          </div>
+        </article>
+
+        <article class="feature">
+          <div>
+            <h2 data-i18n="feat_closed_h">Close it and keep playing</h2>
+            <p data-i18n="feat_closed_p">Fold the iPhone shut and Game Boy, Game Boy Color, and Game Boy Advance games keep playing on the outer screen, in landscape, inside a full-screen classic handheld shell.</p>
+          </div>
+          <div class="feature-media">
+            <img src="assets/screenshots/foldable-04-devices.webp" width="800" height="1738" alt="TwinPlay layouts for iPhone, iPad and a foldable iPhone, including a closed outer screen.">
+          </div>
+        </article>
+
+        <article class="feature" id="skins">
+          <div>
+            <h2 data-i18n="feat_edit_h">Move every screen and button</h2>
+            <p data-i18n="feat_edit_p">Custom layouts are free. Move and resize the screens and every on-screen button, with snap guides and integer scaling. Layouts are saved per console and orientation.</p>
+          </div>
+          <div class="feature-media">
+            <img src="assets/screenshots/iphone-02-editor.webp" width="800" height="1738" alt="Edit Layout in TwinPlay, with snap guides and integer scaling.">
+          </div>
+        </article>
+
+        <article class="feature">
+          <div>
+            <h2 data-i18n="feat_skins_h">Jelly skins, your way</h2>
+            <p data-i18n="feat_skins_p">Realistic skins inspired by classic handhelds, including colorful translucent shells. Every layout and skin is just the default — pick the one you like and change it any time.</p>
+          </div>
+          <div class="feature-media">
+            <img src="assets/screenshots/ipad-03-skins.webp" width="1100" height="1466" alt="Jelly translucent skins on iPad in yellow, pink and blue.">
+          </div>
+        </article>
+
+        <article class="feature">
+          <div>
+            <h2 data-i18n="feat_play_h">Play the way you want</h2>
+            <p data-i18n="feat_play_p">Touch controls made for phones, a touch-only mode for stylus play, and support for MFi, Xbox, and PlayStation controllers. Save states plus normal in-game saves. Screenshots and gameplay videos, with game sound, go to Photos.</p>
+          </div>
+          <div class="feature-media">
+            <img src="assets/screenshots/iphone-05-saves.webp" width="800" height="1738" alt="The TwinPlay save states sheet.">
+          </div>
+        </article>
+
+        <article class="feature">
+          <div>
+            <h2 data-i18n="feat_library_h">A library that stays out of the way</h2>
+            <p data-i18n="feat_library_p">Cover Flow, cartridge view, and title-screen view. A free one-tap cover finder for games you own. A Home Screen widget (iOS 17 or later) opens recent, favorite, or most played games with one tap.</p>
+          </div>
+          <div class="feature-media">
+            <img src="assets/screenshots/ipad-04-devices.webp" width="1100" height="1466" alt="TwinPlay running on iPhone, iPad and a foldable iPhone.">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="systems">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="sys_h">Systems you can play today</h2>
+          <p class="sub" data-i18n="sys_p">These systems are in the current App Store release. TwinPlay does not include any games — you add files you own, such as backups of your own cartridges, or free homebrew from independent developers.</p>
+        </div>
+        <div class="chips" aria-label="Available systems">
+          <span class="chip">Nintendo 3DS</span>
+          <span class="chip">Nintendo DS</span>
+          <span class="chip">Nintendo 64</span>
+          <span class="chip">Super NES</span>
+          <span class="chip">NES</span>
+          <span class="chip">Game Boy Advance</span>
+          <span class="chip">Game Boy Color</span>
+          <span class="chip">Game Boy</span>
+        </div>
+        <p class="systems-note" data-i18n="sys_note">A built-in BIOS is included for the systems that need one, so you do not have to add BIOS files. TwinPlay does not include, download, or link to copyrighted games or BIOS files.</p>
+
+        <div class="section-head" style="margin-top:64px">
+          <h2 data-i18n="start_h">Easy to start</h2>
+          <p class="sub" data-i18n="start_p">Three steps. TwinPlay only looks for new games when you ask it to — it never scans your phone by itself.</p>
+        </div>
+        <div class="steps">
+          <article class="step">
+            <div class="num">01</div>
+            <h3 data-i18n="step1_h">Put your game files in the Files app</h3>
+            <p data-i18n="step1_p">For example, in Downloads or iCloud Drive.</p>
+          </article>
+          <article class="step">
+            <div class="num">02</div>
+            <h3 data-i18n="step2_h">Import them in TwinPlay</h3>
+            <p data-i18n="step2_p">Tap + and choose Import Game Files… or Import a Folder…</p>
+          </article>
+          <article class="step">
+            <div class="num">03</div>
+            <h3 data-i18n="step3_h">Tap a game to play</h3>
+            <p data-i18n="step3_p">When you want to add more, tap Find New Games Now.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="coming">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="eyebrow" data-i18n="coming_h">On the way</p>
+          <h2 data-i18n="review_h">In review: more systems, and Mac</h2>
+          <p class="sub" data-i18n="review_p">TwinPlay 1.5 is in review for iPhone, iPad, and Mac. It is not on the App Store yet. The submitted update adds PlayStation, PSP, Genesis (Mega Drive), Master System, and Game Gear, plus iCloud save sync between iPhone and iPad, and a Mac app that plays in a window with a keyboard or a controller.</p>
+        </div>
+        <div class="chips">
+          <span class="chip">PlayStation</span>
+          <span class="chip">PSP</span>
+          <span class="chip">Genesis (Mega Drive)</span>
+          <span class="chip">Master System</span>
+          <span class="chip">Game Gear</span>
+          <span class="chip">Mac</span>
+        </div>
+        <img class="mac-shot" src="assets/screenshots/mac-01-systems.webp" width="1440" height="900" alt="A preview of TwinPlay for Mac, now in review and not yet on the App Store.">
+
+        <div class="soon-block">
+          <h3 data-i18n="later_h">Coming later</h3>
+          <p class="sub" data-i18n="later_p">Dreamcast, GameCube, and PlayStation Vita are in the works. They are not available in the App Store app today. The skins below are previews.</p>
+          <div class="skin-grid">
+            <figure class="skin-card">
+              <img src="assets/coming/dc-classic-white.webp" width="480" height="853" alt="Preview of a Classic White Dreamcast-style TwinPlay skin.">
+              <figcaption class="name">Classic White</figcaption>
+              <div class="sys">Dreamcast</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/dc-clear-blue.webp" width="480" height="853" alt="Preview of a Clear Blue Dreamcast-style TwinPlay skin.">
+              <figcaption class="name">Clear Blue</figcaption>
+              <div class="sys">Dreamcast</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/dc-clear-pink.webp" width="480" height="853" alt="Preview of a Clear Pink Dreamcast-style TwinPlay skin.">
+              <figcaption class="name">Clear Pink</figcaption>
+              <div class="sys">Dreamcast</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/dc-sports-black.webp" width="480" height="853" alt="Preview of a Sports Black Dreamcast-style TwinPlay skin.">
+              <figcaption class="name">Sports Black</figcaption>
+              <div class="sys">Dreamcast</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/gc-indigo.webp" width="480" height="853" alt="Preview of an Indigo GameCube-style TwinPlay skin.">
+              <figcaption class="name">Indigo</figcaption>
+              <div class="sys">GameCube</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/gc-spice.webp" width="480" height="853" alt="Preview of a Spice GameCube-style TwinPlay skin.">
+              <figcaption class="name">Spice</figcaption>
+              <div class="sys">GameCube</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/gc-platinum.webp" width="480" height="853" alt="Preview of a Platinum GameCube-style TwinPlay skin.">
+              <figcaption class="name">Platinum</figcaption>
+              <div class="sys">GameCube</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/gc-jet-black.webp" width="480" height="853" alt="Preview of a Jet Black GameCube-style TwinPlay skin.">
+              <figcaption class="name">Jet Black</figcaption>
+              <div class="sys">GameCube</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/vita-crystal-black.webp" width="480" height="853" alt="Preview of a Crystal Black PlayStation Vita-style TwinPlay skin.">
+              <figcaption class="name">Crystal Black</figcaption>
+              <div class="sys">PlayStation Vita</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/vita-crystal-white.webp" width="480" height="853" alt="Preview of a Crystal White PlayStation Vita-style TwinPlay skin.">
+              <figcaption class="name">Crystal White</figcaption>
+              <div class="sys">PlayStation Vita</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/vita-aqua-blue.webp" width="480" height="853" alt="Preview of an Aqua Blue PlayStation Vita-style TwinPlay skin.">
+              <figcaption class="name">Aqua Blue</figcaption>
+              <div class="sys">PlayStation Vita</div>
+            </figure>
+            <figure class="skin-card">
+              <img src="assets/coming/vita-pink-black.webp" width="480" height="853" alt="Preview of a Pink Black PlayStation Vita-style TwinPlay skin.">
+              <figcaption class="name">Pink Black</figcaption>
+              <div class="sys">PlayStation Vita</div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="pricing">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="pricing_h">Free to download. One-time upgrades, no subscription.</h2>
+          <p class="sub" data-i18n="pricing_p">Restore purchases on any of your iPhones with Restore Purchases.</p>
+        </div>
+        <div class="plans">
+          <article class="plan">
+            <h3 data-i18n="plan_free">TwinPlay</h3>
+            <p class="price" data-i18n="price_free">Free</p>
+            <p class="cadence" data-i18n="cadence">One-time · US price</p>
+            <ul>
+              <li data-i18n="free_1">Play your own games on the systems available now</li>
+              <li data-i18n="free_2">Layout editor and the free Pearl White skin</li>
+              <li data-i18n="free_3">Save states, cheats you enter yourself, and a free cover finder</li>
+            </ul>
+          </article>
+          <article class="plan">
+            <h3 data-i18n="plan_plus">Plus</h3>
+            <p class="price" data-i18n="price_plus">$0.99</p>
+            <p class="cadence" data-i18n="cadence">One-time · US price</p>
+            <ul>
+              <li data-i18n="plus_1">Everything in the free app</li>
+              <li data-i18n="plus_2">All skins, library scenes, and app icons</li>
+              <li data-i18n="plus_3">Single-screen mode</li>
+            </ul>
+          </article>
+          <article class="plan featured">
+            <h3 data-i18n="plan_pro">Pro</h3>
+            <p class="price" data-i18n="price_pro">$4.99</p>
+            <p class="cadence" data-i18n="cadence">One-time · US price</p>
+            <ul>
+              <li data-i18n="pro_1">Everything in Plus</li>
+              <li data-i18n="pro_2">Cover Flow, custom BIOS, FPS meter, stick calibration, custom backgrounds</li>
+              <li data-i18n="pro_3">No ads</li>
+            </ul>
+          </article>
+        </div>
+        <p class="price-note" data-i18n="price_note">Prices are the current US App Store prices. The local price is shown in the app before you buy. Family Sharing may apply to some in-app purchases.</p>
+      </div>
+    </section>
+
+    <section class="section" id="specs">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="specs_h">Specifications</h2>
+        </div>
+        <table class="specs">
+          <tbody>
+            <tr>
+              <th data-i18n="spec_dev">Devices</th>
+              <td data-i18n="spec_dev_v">iPhone and iPad. Requires iOS 16 or iPadOS 16 or later. Works best on iPhone 13 or newer.</td>
+            </tr>
+            <tr>
+              <th data-i18n="spec_size">Size</th>
+              <td data-i18n="spec_size_v">71.9 MB (current App Store version, 1.4.2).</td>
+            </tr>
+            <tr>
+              <th data-i18n="spec_lang">Languages</th>
+              <td data-i18n="spec_lang_v">English, Spanish, French, German, Italian, Portuguese, Japanese, Korean, and Simplified Chinese.</td>
+            </tr>
+            <tr>
+              <th data-i18n="spec_ctrls">Controls</th>
+              <td data-i18n="spec_ctrls_v">On-screen touch controls, or a compatible MFi, Xbox, or PlayStation controller. Game controllers are supported.</td>
+            </tr>
+            <tr>
+              <th data-i18n="spec_saves">Saves</th>
+              <td data-i18n="spec_saves_v">Save states plus normal in-game saves. Screenshots and gameplay videos save to Photos.</td>
+            </tr>
+            <tr>
+              <th data-i18n="spec_price">Price</th>
+              <td data-i18n="spec_price_v">Free to download, with optional one-time Plus ($0.99) and Pro ($4.99) purchases in the US. No subscription. The free version shows a banner ad in the library.</td>
+            </tr>
+            <tr>
+              <th data-i18n="spec_age">Age rating</th>
+              <td data-i18n="spec_age_v">4+</td>
+            </tr>
+            <tr>
+              <th data-i18n="spec_devl">Developer</th>
+              <td data-i18n="spec_devl_v">Charlie Rodriguez Garcia</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="section" id="reviews">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="reviews_h">From the App Store</h2>
+          <p class="sub" data-i18n="reviews_p">Real reviews on the US App Store. TwinPlay is rated 5.0 from 5 ratings.</p>
+        </div>
+        <div class="reviews">
+          <blockquote class="quote">
+            <p data-i18n="rev1">“Wow this is such a hassle free emulator it just works exactly how you want it to!”</p>
+            <footer data-i18n="rev1_by">Jhemss · App Store</footer>
+          </blockquote>
+          <blockquote class="quote">
+            <p data-i18n="rev2">“Greatest Emulator Ever”</p>
+            <footer data-i18n="rev2_by">Christino1985 · App Store</footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 data-i18n="faq_h">FAQ</h2>
+          <p class="sub"><span data-i18n="faq_contact">Questions? Email</span> <a href="mailto:twinplay.support@gmail.com">twinplay.support@gmail.com</a></p>
+        </div>
+        <div class="faq">
+          <details>
+            <summary data-i18n="faq1_q">Which systems can I play?</summary>
+            <p data-i18n="faq1_a">The current App Store release plays 3DS, DS, Nintendo 64, Super NES, NES, Game Boy Advance, Game Boy Color, and Game Boy. PlayStation, PSP, Genesis (Mega Drive), Master System, and Game Gear are in TwinPlay 1.5, which is in review and not available yet. Dreamcast, GameCube, and PlayStation Vita are coming later.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq2_q">Does TwinPlay include games?</summary>
+            <p data-i18n="faq2_a">No. TwinPlay does not include any games or system files, and it does not download games. Add game files that you own, such as backups of your own cartridges, or free homebrew made by independent developers.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq3_q">Which devices does it support?</summary>
+            <p data-i18n="faq3_a">iPhone and iPad, on iOS or iPadOS 16 or later. It works best on iPhone 13 or newer. A Mac version is in review and is not on the App Store yet.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq4_q">How do I add my games?</summary>
+            <p data-i18n="faq4_a">Put your game files in the Files app (for example, in Downloads or iCloud Drive). In TwinPlay, tap + and choose Import Game Files… or Import a Folder…. Tap a game to play. TwinPlay only looks for new games when you tap “Find New Games Now.”</p>
+          </details>
+          <details>
+            <summary data-i18n="faq5_q">Can I use a controller?</summary>
+            <p data-i18n="faq5_a">Yes. TwinPlay works with MFi, Xbox, and PlayStation controllers, as well as on-screen touch controls. There is a touch-only mode for DS games played with the stylus.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq6_q">What is the difference between Plus and Pro?</summary>
+            <p data-i18n="faq6_a">Both are one-time purchases, with no subscription. Plus unlocks all skins, library scenes, app icons, and single-screen mode. Pro includes everything in Plus, plus Cover Flow, custom BIOS, an FPS meter, stick calibration, custom backgrounds, and no ads. You can restore purchases on any of your iPhones.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq7_q">Some games don’t run. What should I do?</summary>
+            <p data-i18n="faq7_a">Emulation is still improving, and some games may not run, or may not run perfectly yet. You can report a game that does not work right from inside the app. Those reports are used to improve TwinPlay.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq8_q">Is TwinPlay affiliated with Nintendo or other console makers?</summary>
+            <p data-i18n="faq8_a">No. TwinPlay is an independent app. It is not affiliated with, endorsed by, or sponsored by Nintendo, Sony, Sega, or Apple. Product names are used only to describe compatibility and belong to their owners.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq9_q">Where is the privacy policy?</summary>
+            <p><span data-i18n="faq9_a_before">Read the</span> <a href="privacy/" data-i18n="faq9_a_link">TwinPlay Privacy Policy</a><span data-i18n="faq9_a_after">. Your games, saves, and settings stay on your device. The free version shows ads from Google AdMob. Pro removes ads.</span></p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <div class="wrap">
+      <section class="cta" id="download">
+        <h2 data-i18n="cta_h">Get TwinPlay</h2>
+        <p class="lede" data-i18n="cta_p">Free on the App Store for iPhone and iPad. Bring your own games.</p>
+        <div class="hero-actions">
+          <a class="badge-link" href="https://apps.apple.com/us/app/twinplay-dual-screen-emulator/id6824603080">
+            <img src="assets/badge-app-store.svg" width="150" height="50" alt="Download on the App Store">
+          </a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="foot">
+    <div class="wrap">
+      <div class="foot-top">
+        <a class="brand" href="./">
+          <img src="assets/icon-rounded-256.png" width="36" height="36" alt="">
+          <span class="brand-name">TwinPlay</span>
+        </a>
+        <nav class="foot-links">
+          <a href="privacy/" data-i18n="foot_privacy">Privacy Policy</a>
+          <a href="support/" data-i18n="foot_support">Support</a>
+          <a href="https://github.com/Chariio/TwinPlay" data-i18n="foot_licenses">Open source licenses</a>
+          <a href="https://x.com/TwinPlayEmu">@TwinPlayEmu</a>
+          <a href="mailto:twinplay.support@gmail.com">twinplay.support@gmail.com</a>
+        </nav>
+      </div>
+      <p class="legal" data-i18n="legal">TwinPlay is an independent app. It is not affiliated with, endorsed by, or sponsored by Nintendo, Sony, Sega, or Apple. Product names are used only to describe compatibility and belong to their owners. TwinPlay does not include, download, or link to copyrighted games or BIOS files.</p>
+      <p class="legal" style="margin-top:16px" data-i18n="copyright">© 2026 Charlie Rodriguez Garcia</p>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
