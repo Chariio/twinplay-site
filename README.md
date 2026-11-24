@@ -55,3 +55,8 @@ The site uses cropped, muted, looping clips in `assets/media/` (top 3DS screen o
 - `pokemon-x` — Pokémon X title
 
 Each clip has H.264 MP4 + VP9 WebM, a poster JPG/WebP, and a dual-screen still (top + touch screen stacked). Videos autoplay only when muted, in view, and when the visitor has not requested reduced motion.
+
+## Photos
+
+The landing page also uses eight product photos from Charlie: a real foldable iPhone running Ocarina of Time 3D in a lime skin, the library with a Super Mario 64 card and Cover Flow, and six skin mockups (Tetris DS, Metroid Fusion, Pokémon Yellow, Killer Instinct, Super Mario 64, and Super Mario 3D Land). Optimized WebP and JPEG versions live in `assets/photos/`. Originals stay in `source-media/` and are not committed.
+
